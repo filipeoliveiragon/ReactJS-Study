@@ -1,0 +1,11 @@
+Ecossistema do Reack
+
+React Router;
+Redux;
+Material UI;
+Ant-Design;
+StoryBook;
+Gatsby;
+Jest;
+React i18n Next;
+NEST;
