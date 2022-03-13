@@ -9,3 +9,49 @@ Gatsby;
 Jest;
 React i18n Next;
 NEST;
+
+
+
+##O que é webpack?
+É um module bundler (empactoador de módulos para aplicações JS).
+Gerar bundler que será utilizado no HTML, em ES5
+
+webpack.js.org
+
+Suporte:
+fontes, css, imagens, html, js e plugins
+
+
+//Configurando webpack
+Entry point - utilizando grafo, o webpack precisa de um ponto de entrada para buscar os modulos
+
+Output - para determinar quais sao os bundlers que o Webpack irá emitir.
+
+Loaders - premitir que o webpack gerencia arquivos não sao JS
+Plugins - podem ser utilizados para otimização de pacotes, minificação, injeção de scripts e muito mais.
+
+--Mode - tipos de confirugações do webpack. 3 modulos
+-Production trás otimizações internas
+-Development - é executado com três plugins, UglifyJsPlugin, ModuleConcatenationPlugin e o NoEmitOnErrorsPlugin.
+-None - nenhuma Configurando
+
+
+###Criando webpack
+Criar arquivo webpack.config.js
+
+#arquivo pasta origin
+const path = require('path')'
+
+module.exports = {
+    entry: '.src/index.js',
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js'
+    }
+};
+
+npm i -D webpack webpack-ModuleConcatenationPlugin
+"build": "webpack --mode prodution"
+
+npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
+
