@@ -1,0 +1,4 @@
+Componentes irmãos nao funcionam
+##React Fragment abre e fecha a tag
+<> </>
+
